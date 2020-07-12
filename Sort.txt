@@ -1,0 +1,1 @@
+I have simulated worst case by reverse sorted numbers. If you want average case use Random numbers. Best Case use sorted numbers. Simple use cases.

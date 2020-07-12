@@ -10,7 +10,7 @@ class SimpleSelectionSort
   }
   public static void main (String[]args)
   {
-    int maxSize = 100000; //AHP BUMPED IT UP 
+    int maxSize = 1000000; //AHP BUMPED IT UP 
     int[] theArray = new int[maxSize];
     int temp = 0;
     // ref to array theArray
