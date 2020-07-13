@@ -1,0 +1,13 @@
+LOOP BACK Statistics
+============================
+real    0m0.826s
+user    0m0.507s
+sys     0m0.363s
+
+
+LAN Statistics
+==================================
+real    0m2.641s
+user    0m0.739s
+sys     0m0.489s
+

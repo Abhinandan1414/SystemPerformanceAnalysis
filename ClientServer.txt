@@ -1,0 +1,1 @@
+Here I am emulating disk access, networking with loop. Message exchanges are unidirectional. From Client to server.
