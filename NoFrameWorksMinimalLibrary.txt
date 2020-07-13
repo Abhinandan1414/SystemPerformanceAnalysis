@@ -1,0 +1,1 @@
+You might have noticed I am making use of no frame-works, minimal library etc. Java and Python examples are also few. This is for a reason. Java and Python are one more layer over the bare-metal. They introduce additional over head etc. As far as possible all the snippets will be in C as simple as possible.
