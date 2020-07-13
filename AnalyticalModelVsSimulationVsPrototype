@@ -1,0 +1,7 @@
+Prototype on target systems, what I mean by target is exact configuration with no additional load such as browser, document reader etc should be used for performance analysis.
+
+Accuracy wise Analytical Modeling is worst. How will you calculate some of the scenarios like print to screen, disk access etc in your analytical model? Plus the books which take the route of Analytical modelling have code which is less than 1000 lines. Plus the Authors of these books brag about why Analytical modeling should be used. The name of the Indian Author is not mentioned intentionally. Embedded system code base hits million lines easyly. Example Embedded emulators which run in hardware boxes. How your Analytical model will fare? Is it even possible to model million lines of code? 
+
+Other two options are simulation and prototype. While simulation is OK, prototype is the best. Where you run actual code on actual Virgin system. Virgin system is system with no additional software or hardware etc. 
+
+Next time when some one presents Analytical models etc, remind them about their Ivory towers and reject the model. Ask for prototype. Hope I made my point clear.
