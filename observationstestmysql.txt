@@ -1,1 +1,1 @@
-Everything is 10s of milliseconds. Damn expensive for Real time systems!!. Plus the storage required for mysql on disk space etc..
+Everything is 10s of milliseconds. Damn expensive for Real time systems!!. Plus the storage required for mysql on disk space etc.. Mind you this is for my host configuration. Embedded devices configuration will be much lower!!
