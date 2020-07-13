@@ -1,0 +1,13 @@
+       Server                                 Client
+       ========                               =======	
+     
+       
+        Socket				      socket
+
+	Bind
+
+	Listen<-----------------------------  connect    // Observe Unidirectional
+
+	Accept                               
+
+	Send/Receive<------------------------->send/Receive //Observe Bidirectional
