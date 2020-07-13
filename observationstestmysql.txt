@@ -1,0 +1,1 @@
+Everything is 10s of milliseconds. Damn expensive for Real time systems!!. Plus the storage required for mysql on disk space etc..

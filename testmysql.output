@@ -1,0 +1,69 @@
+>>/home/abhi/MyLearning/Next_Book/testmysql.sh    
+spawn mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 26
+Server version: 8.0.20-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database temp3;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> 
+use temp3;
+
+mysql> use temp3;
+Database changed
+mysql> 
+create table emp(id int(10),name varchar(40),age int(3));
+
+mysql> create table emp(id int(10),name varchar(40),age int(3));
+Query OK, 0 rows affected, 2 warnings (0.08 sec)
+
+mysql> 
+mysql> insert into emp (id,name,age) values (1,"Abhi",42);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+insert into emp (id,name,age) values (2,"Sangeeta",42);
+
+mysql> insert into emp (id,name,age) values (2,"Sangeeta",42);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+insert into emp (id,name,age) values (3,"Ishan",42);
+
+mysql> insert into emp (id,name,age) values (3,"Ishan",42);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+insert into emp (id,name,age) values (1,"Shivu",42);
+
+mysql> insert into emp (id,name,age) values (1,"Shivu",42);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> 
+select * from emp;
+
+mysql> select * from emp;
++------+----------+------+
+| id   | name     | age  |
++------+----------+------+
+|    1 | Abhi     |   42 |
+|    2 | Sangeeta |   42 |
+|    3 | Ishan    |   42 |
+|    1 | Shivu    |   42 |
++------+----------+------+
+4 rows in set (0.00 sec)
+
+mysql> 
+mysql> exit;
+Bye
+

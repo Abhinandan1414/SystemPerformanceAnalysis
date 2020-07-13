@@ -1,0 +1,14 @@
+sudo mysql
+mysql> create database temp;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use temp;
+Database changed
+mysql> create table emp(id int(10),name varchar(40),age int(3));
+Query OK, 0 rows affected, 2 warnings (0.10 sec)
+mysql> insert into emp (id,name,age) values (1,"Abhi",42);
+mysql> insert into emp (id,name,age) values (2,"Sangeeta",38);
+mysql> insert into emp (id,name,age) values (3,"Ishan",12);
+mysql> insert into emp (id,name,age) values (4,"Shivu",6);
+
+for more commands http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm
