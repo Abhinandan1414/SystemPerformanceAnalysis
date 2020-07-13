@@ -1,0 +1,5 @@
+Take the output and get the pearsons and spearmans coefficient of correlation. 
+
+Orange results are counter-intuitive. Is it bug or my intutions are wrong??
+
+Fortunately, I have some tool at my disposal for analysis. Thankful to Orange. 
