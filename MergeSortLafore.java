@@ -91,7 +91,7 @@ class MergeSortApp
 {
   public static void main (String[]args)
   {
-    int maxSize = 10000000; //AHP BUMPED IT UP to 1 million
+    int maxSize = 10000000; //AHP BUMPED IT UP to 10 million
     int count = 0;
     long start, end;
     start = System.currentTimeMillis();

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(150, 150)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Feature Statistics" position="(216.0, 346.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" title="Feature Statistics" version="" />
+		<node id="2" name="Select Rows" position="(287.0, 101.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" title="Select Rows" version="" />
+		<node id="3" name="Data Table" position="(409.0, 93.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="4" name="As Timeseries" position="(559.0, 93.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owtabletotimeseries.OWTableToTimeseries" title="As Timeseries" version="" />
+		<node id="5" name="Select Columns" position="(677.0, 92.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="6" name="ARIMA Model" position="(827.0, 92.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owarimamodel.OWARIMAModel" title="ARIMA Model" version="" />
+		<node id="7" name="Data Table" position="(877.0, 304.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="3" source_channel="Matching Data" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="3" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="5" source_channel="Time series" source_node_id="4" />
+		<link enabled="true" id="5" sink_channel="Time series" sink_node_id="6" source_channel="Data" source_node_id="5" />
+		<link enabled="true" id="6" sink_channel="Data" sink_node_id="7" source_channel="Forecast" source_node_id="6" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('/home/abhi/OrangeDataSet/Securities/prices.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/home/abhi/OrangeDataSet/securities.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 8, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/home/abhi/OrangeDataSet/multivariate-time-series-data/exchange_rate/test.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 8, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/abhi/OrangeDataSet/Securities', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x04\x00\x00\x00\x87\x00\x00\x02\x04\x00\x00\x00\x87\x00\x00\x02\x04\x00\x00\x00\x87\x00\x00\x03=\x00\x00\x01\xcb\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAA2gAAABIAAARnAAACIgAAANoAAAAvAAAE
+ZwAAAiIAAAAAAAAAAAVWcQRYBwAAAHNvcnRpbmdxBUsAY3NpcApfdW5waWNrbGVfZW51bQpxBlgM
+AAAAUHlRdDUuUXRDb3JlcQdYCQAAAFNvcnRPcmRlcnEISwGHcQlScQqGcQtYCwAAAF9fdmVyc2lv
+bl9fcQxLAlgQAAAAY29udGV4dF9zZXR0aW5nc3ENXXEOY29yYW5nZXdpZGdldC5zZXR0aW5ncwpD
+b250ZXh0CnEPKYFxEH1xEShYBgAAAHZhbHVlc3ESfXETKFgJAAAAY29sb3JfdmFycRROSv7///+G
+cRVYDQAAAHNlbGVjdGVkX3ZhcnNxFl1xF2gMSwJ1WAoAAABhdHRyaWJ1dGVzcRh9cRkoWAQAAABk
+YXRlcRpLBFgEAAAAb3BlbnEbSwJYBQAAAGNsb3NlcRxLAlgDAAAAbG93cR1LAlgEAAAAaGlnaHEe
+SwJYBgAAAHZvbHVtZXEfSwJ1WAUAAABtZXRhc3EgfXEhWAYAAABzeW1ib2xxIksDc3ViYXUu
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBAAAABw
+dXJnZV9hdHRyaWJ1dGVzcQOJWA0AAABwdXJnZV9jbGFzc2VzcQSJWBMAAABzYXZlZFdpZGdldEdl
+b21ldHJ5cQVDMgHZ0MsAAgAAAAABdQAAAGEAAAPMAAACDQAAAXUAAAB+AAADzAAAAg0AAAAAAAAA
+AAVWcQZYEAAAAHVwZGF0ZV9vbl9jaGFuZ2VxB4hYCwAAAF9fdmVyc2lvbl9fcQhLAlgQAAAAY29u
+dGV4dF9zZXR0aW5nc3EJXXEKY29yYW5nZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0CnELKYFxDH1x
+DShYBgAAAHZhbHVlc3EOfXEPKFgKAAAAY29uZGl0aW9uc3EQXXERKFgGAAAAc3ltYm9scRJLA0sA
+WAQAAABNU0ZUcROFcRR0cRVhaAhLAnVYCgAAAGF0dHJpYnV0ZXNxFn1xFyhYBAAAAGRhdGVxGEsE
+WAQAAABvcGVucRlLAlgFAAAAY2xvc2VxGksCWAMAAABsb3dxG0sCWAQAAABoaWdocRxLAlgGAAAA
+dm9sdW1lcR1LAnVYBQAAAG1ldGFzcR59cR9oEksDc3ViYXUu
+</properties>
+		<properties format="literal" node_id="3">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\x11\x00\x00\x00\x12\x00\x00\x040\x00\x00\x02"\x00\x00\x01\x11\x00\x00\x00/\x00\x00\x040\x00\x00\x02"\x00\x00\x00\x00\x00\x00\x00\x00\x05V', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': True, '__version__': 1}</properties>
+		<properties format="literal" node_id="4">{'autocommit': True, 'controlAreaVisible': True, 'radio_sequential': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x05\x00\x00\x00\xa8\x00\x00\x03#\x00\x00\x01\x8c\x00\x00\x02\x05\x00\x00\x00\xc5\x00\x00\x03#\x00\x00\x01\x8c\x00\x00\x00\x00\x00\x00\x00\x00\x05V', 'selected_attr': 'date', '__version__': 1}</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAABdQAAAAAAAAPMAAACdAAAAXUAAAAdAAAD
+zAAAAnQAAAAAAAAAAAVWcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQhjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNv
+bnRleHQKcQkpgXEKfXELKFgGAAAAdmFsdWVzcQx9cQ0oWBEAAABkb21haW5fcm9sZV9oaW50c3EO
+fXEPKFgEAAAAZGF0ZXEQSwSGcRFYCQAAAGF0dHJpYnV0ZXESSwCGcRNYBAAAAG9wZW5xFEsChnEV
+aBJLAYZxFlgDAAAAbG93cRdLAoZxGGgSSwKGcRlYBAAAAGhpZ2hxGksChnEbaBJLA4ZxHFgGAAAA
+dm9sdW1lcR1LAoZxHmgSSwSGcR9YCAAAAFNlbGVjdGVkcSBLAYZxIWgSSwWGcSJYBQAAAGNsb3Nl
+cSNLAoZxJFgFAAAAY2xhc3NxJUsAhnEmWAYAAABzeW1ib2xxJ0sDhnEoWAQAAABtZXRhcSlLAIZx
+KnVK/v///4ZxK2gGSwF1WAoAAABhdHRyaWJ1dGVzcSx9cS0oaBBLBGgUSwJoI0sCaBdLAmgaSwJo
+HUsCaCBLAXVYBQAAAG1ldGFzcS59cS9oJ0sDc3ViYXUu
+</properties>
+		<properties format="literal" node_id="6">{'autocommit': True, 'controlAreaVisible': True, 'd': 0, 'forecast_confint': 95, 'forecast_steps': 58, 'learner_name': '', 'p': 1, 'q': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xf1\x00\x00\x00?\x00\x00\x03Q\x00\x00\x01\xf5\x00\x00\x01\xf1\x00\x00\x00\\\x00\x00\x03Q\x00\x00\x01\xf5\x00\x00\x00\x00\x00\x00\x00\x00\x05V', 'use_exog': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="7">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\x11\x00\x00\x00\x12\x00\x00\x040\x00\x00\x02"\x00\x00\x01\x11\x00\x00\x00/\x00\x00\x040\x00\x00\x02"\x00\x00\x00\x00\x00\x00\x00\x00\x05V', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': True, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

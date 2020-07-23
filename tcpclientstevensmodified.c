@@ -1,5 +1,5 @@
 
-/* Code is not mine */
+/*  */
 
 #include <netdb.h> 
 #include <stdio.h> 
