@@ -3,7 +3,7 @@
 #include<time.h>
   int main ()
   {
-    int maxSize = 100; 
+    int maxSize = 1000000; 
     int theArray[maxSize];
     int temp = 0;
     // ref to array theArray
